@@ -4,16 +4,21 @@
     <title>Ejemplo de Eventos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../../sources/img/60x60bb.jpg" sizes="32x32">
-    <link href="../sources/css/cssPrincipal.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/60x60bb.jpg" sizes="32x32">
+    <link  rel="stylesheet" type="text/css" href="../sources/css/cssPrincipal.css">
     <style>
+      
+      pre{
+        width: 700px;
+      }
+      
       div , a{
         display: block;
         background: #ffcccc;
         width: 200px;
         padding: 10px;
       }
-      
+
       div {
         margin: 10px;
       }
@@ -25,6 +30,13 @@
     </style>
 
   <body>
+    <pre>
+        function linkSomePage_onClick() {
+        document.getElementById('d1').innerHTML = ('Este enlace no lleva a ninguna parte');
+        return false;
+      }
+    </pre>
+
     <script>
       function linkSomePage_onClick() {
         document.getElementById('d1').innerHTML = ('Este enlace no lleva a ninguna parte');
@@ -35,8 +47,7 @@
     <div id="d1"></div>
 
     <a href="">Pincha aqui</a>
-    <a class="action" href="../../paginaContenido.html">Volver al menu principal</a>
-    <script>
+  <a class="action" href="../../paginaEjemplos.html">Volver al menu principal</a>    <script>
       window.document.links[0].onclick = linkSomePage_onClick();
     </script>
   </body>

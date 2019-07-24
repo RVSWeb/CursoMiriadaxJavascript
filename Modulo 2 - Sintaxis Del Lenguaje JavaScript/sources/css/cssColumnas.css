@@ -3,12 +3,42 @@
     Author     : RVS
 */
 
+@font-face {
+  font-family: "TelefonicaWeb-Light.ttf";
+  src: url("../font/TelefonicaWeb-Light.ttf");
+}
+
+body{
+  background: #00b5cc;
+  font-family: "TelefonicaWeb-Light.ttf";
+}
+
 main {
   display: block;
   padding: 0 1rem;
   margin: 1rem;
   align-content: center;
   text-align: center;
+}
+
+h2{
+  width: 300px;
+  margin: 0px auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #ff9999;
+  border-radius: 12px;
+}
+
+ul.lu1 {
+  padding: 30px;
+  width: 100px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+li.li1{
+  list-style-type: none;
 }
 
 td.filas{
@@ -27,8 +57,32 @@ table.center{
   width:70%; 
 }
 
+h3{
+  width: 150px;
+  padding: 20px;
+  background: #ffff99;
+  border-radius: 12px;
+}
+
+p.p0{
+  width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 12px;
+  background: #ffff99;
+  font-family: cursive;
+}
+
+p.p1{
+  background: #ffff99;
+  width: 300px;
+  padding: 10px;
+  border-radius: 12px;
+}
+
 th{
   padding: 10px;
+  width: 150px;
 }
 
 tr {
@@ -36,4 +90,30 @@ tr {
   padding: 150px;
   height: 50px;
   width: 150px;
+}
+
+div{
+  margin: 0px auto;
+}
+
+.action{
+  display: block;
+  margin: 20px auto;
+  margin-bottom: 20px;
+  width: 180px;
+  border-radius: 3px;
+  align-content: center;
+}
+
+
+.action:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 6px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.action:hover, a:active {
+  background-color: red;
 }

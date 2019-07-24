@@ -14,18 +14,54 @@
     <link rel="shortcut icon" href="https://goo.gl/cais23">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link href="../sources/css/cssPrincipal.css" type="text/css" rel="stylesheet">
-    <!--<style></style>-->
+    <style>
+
+      p , pre{
+        background: #ffffff;
+      }
+
+      p#p1{
+        margin: 20px;
+        padding: 10px;
+        width: 100px;
+      }
+
+      pre#pre1{
+        text-align: left;
+        margin: 20px;
+        padding : 10px 0px 0px 0px;
+        width: 800px;
+      }
+
+    </style>
   </head>
   <body>
 
+    <pre id="pre1">
+     // El ámbito de una variable (“scope”): ubicación en el código en la que se define
+     // la variable. Hay dos tipos de ámbitos: global y local.
+
+      function crea() {
+        var m = "Mensaje"; // variable local - no sale del ambito
+      }
+
+      <b>crea();</b>
+
+      //console.log(m);
+
+      function crea(){
+        var m = "Variable local";
+        document.getElementById('p1').innerHTML = m;
+        console.log(m);
+      }
+
+      <b>crea();</b>
+
+    </pre>
+
     <p id="p1"></p>
-    <p id="p2"></p>
-    <p id="p3"></p>
-    <p id="p4"></p>
-    <p id="p5"></p>
-    <p id="p6"></p>
-    <p id="p7"></p>
-    <p id="p8"></p>
+
+    <a class="action" href="../../paginaEjemplos.html">Volver al menu principal</a>
 
     <footer style="
             position: fixed;

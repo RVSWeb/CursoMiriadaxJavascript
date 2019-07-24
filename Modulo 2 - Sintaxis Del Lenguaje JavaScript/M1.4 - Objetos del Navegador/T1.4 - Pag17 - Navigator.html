@@ -6,18 +6,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/60x60bb.jpg" sizes="32x32">
-    <link href="../sources/css/cssPrincipal.css" type="text/css" rel="stylesheet">
+    <link  rel="stylesheet" type="text/css" href="../sources/css/cssPrincipal.css">
     <style>
       p{
         border-radius: 15px;
+      }
+
+      pre{
+        width: 600px;
+        margin: 10px auto;
       }
 
       p#demo2{
         background-color: #ff9999;
         width: 150px;
         font-weight: bold;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 50px auto;
         padding: 20px;
       }
 
@@ -30,9 +34,14 @@
         padding: 10px;
         font-weight: bold;
       }
+
+      a.action{
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+
     </style>
   <body>
-
 
     <p id="demo2" onclick="myFunctionBrowser()">
       <span>Pulsa en la imagen</span>
@@ -45,7 +54,30 @@
       </p>
     </div>
 
+    <pre>
+     function getBrowserName() {
+        var txt = "";
+        txt += "< p >Browser CodeName: " + navigator.appCodeName + "< /p>";
+        txt += "< p >Browser Name: " + navigator.appName + "< /p>";
+        txt += "< p >Browser Version: " + navigator.appVersion + "< /p>";
+        txt += "< p >Cookies Enabled: " + navigator.cookieEnabled + "< /p>";
+        txt += "< p >Browser Language: " + navigator.language + "< /p>";
+        txt += "< p >Browser Online: " + navigator.onLine + "< /p>";
+        txt += "< p >Platform: " + navigator.platform + "< /p>";
+        txt += "< p >User-agent header: " + navigator.userAgent + "< /p>";
+
+        document.getElementById("demo1").innerHTML = txt;
+      }
+
+      function myFunctionBrowser() {
+        var x = "Language of the browser: " + navigator.language;
+        document.getElementById("demo2").innerHTML = x;
+      }
+    </pre>
+
+
     <script>
+
       function getBrowserName() {
         var txt = "";
         txt += "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
@@ -66,6 +98,5 @@
       }
 
     </script>
-    <a class="action" href="../../paginaContenido.html">Volver al menu principal</a>
-  </body>
+  <a class="action" href="../../paginaEjemplos.html">Volver al menu principal</a>  </body>
 </html>

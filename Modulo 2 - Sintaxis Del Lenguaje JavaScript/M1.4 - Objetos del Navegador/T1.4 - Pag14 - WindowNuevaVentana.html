@@ -23,9 +23,20 @@
     </script>
   </head>
   <body>
+    <pre id="p1">
+      function AbrirVentana() {
+        ventana = open("", "nueva", "toolbar=no,directories=no,menubar=no,width=380,height=180");
+        ventana.document.write("&lt;head&gt;");
+        ventana.document.write("&lt;Nueva Ventana desde Javascript&lt;/title&gt;");
+        ventana.document.write("&lt;head&gt;");
+        ventana.document.write("&lt;body&gt;");
+        ventana.document.write("&lt;font size=4 color=red>Nueva Ventana&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;");
+        ventana.document.write("&lt;form&gt;&lt;input type='button' value='Cerrar' onClick='self.close()'&gt;&lt;/form&gt;");
+        ventana.document.write("&lt;/body&gt;");
+      }
+    </pre>
     <form>
       <input type="button" value="Abrir una ventana" onclick="AbrirVentana();">
     </form>
-    <a class="action" href="../../paginaContenido.html">Volver al menu principal</a>
-  </body>
+  <a class="action" href="../../paginaEjemplos.html">Volver al menu principal</a>  </body>
 </html>

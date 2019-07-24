@@ -14,18 +14,48 @@
     <link rel="shortcut icon" href="https://goo.gl/cais23">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <!--<style></style>-->
-  <link href="../sources/css/cssPrincipal.css" type="text/css" rel="stylesheet">
+    <link href="../sources/css/cssPrincipal.css" type="text/css" rel="stylesheet">
+    <style>
+
+      pre , p{
+        background: #ffffff;
+      }
+
+      p#p1{
+        text-align: center;
+        width: 100px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 12px;
+      }
+
+      pre#pre1{
+        color: red;
+        text-align: left;
+        width: 400px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 12px;
+      }
+
+    </style>
   </head>
   <body>
 
     <p id="p1"></p>
-    <p id="p2"></p>
-    <p id="p3"></p>
-    <p id="p4"></p>
-    <p id="p5"></p>
-    <p id="p6"></p>
-    <p id="p7"></p>
-    <p id="p8"></p>
+
+    <pre id="pre1">
+ var m = "global";
+
+ function muestra() {
+     var m = "local";
+     console.log(m);
+  }
+
+ document.getElementById('p1').innerHTML = m;
+    </pre>
+
+    <a class="action" href="../../paginaEjemplos.html">Volver al menu principal</a>
 
     <footer style="
             position: fixed;

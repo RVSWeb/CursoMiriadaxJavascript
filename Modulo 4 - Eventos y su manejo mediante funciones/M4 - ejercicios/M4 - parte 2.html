@@ -33,6 +33,13 @@
         width: 150px;
       }
 
+      pre{
+        background: #ffffff;
+        width: 580px;
+        margin: 10px;
+        padding: 10px;
+      }
+
     </style>
   </head>
   <body>
@@ -43,6 +50,14 @@
 
     <p id="p1">Elemento</p>
 
+    <pre>
+      var nuevoNodo = document.createElement('p');
+        nuevoNodo.innerHTML = "Nuevo elemento añadido";
+        nuevoNodo.setAttribute("class", "p1");
+          document.getElementById('p1').appendChild(nuevoNodo);
+    </pre>
+
+    <a style="margin: 30px;" class="action" href="../../paginaEjemplos.html">Volver al menu principal</a>
 
     <footer style="
             position: fixed;
@@ -68,12 +83,10 @@
       </aside>
     </footer>
     <script>
-
       var nuevoNodo = document.createElement('p');
       nuevoNodo.innerHTML = "Nuevo elemento añadido";
       nuevoNodo.setAttribute("class", "p1");
       document.getElementById('p1').appendChild(nuevoNodo);
-
     </script>
   </body>
 </html>

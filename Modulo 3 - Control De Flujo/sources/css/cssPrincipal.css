@@ -1,13 +1,11 @@
 
-body{
-  background-color: #126bbf;
+@font-face{
+  font-family: "TelefonicaWeb-Light.ttf";
+  src: url("../..//font/TelefonicaWeb-Light.ttf");
 }
 
-p {
-  font-family: 'Raleway',sans-serif; 
-  font-size: 18px; 
-  font-weight: 500; 
-  line-height: 32px; margin: 0 0 24px; 
+body{
+  background-color: #00b5cc;
 }
 
 ul , li {
@@ -15,6 +13,8 @@ ul , li {
   width: 180px;
   margin: 0 auto;
   align-content: center;
+  background: #ffffff;
+  font-family: "TelefonicaWeb-Light.ttf";
 }
 
 li:hover, a:active  {

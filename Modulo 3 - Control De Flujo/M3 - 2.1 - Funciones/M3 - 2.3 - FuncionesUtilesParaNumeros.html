@@ -13,20 +13,114 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="shortcut icon" href="https://goo.gl/cais23">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-    <!--<style></style>-->
-    <link href="../sources/css/cssPrincipal.css" type="text/css" rel="stylesheet">
+    <style>
+
+      div#d1{
+        display: block;
+        width: 150px;
+        margin: 10px auto 0px 10px;
+        padding: 15px;
+        background: #1AAB8A;
+      }
+
+      div#d2{
+        display: block;
+        margin: 5px auto 0px 10px;
+        padding: 15px;
+        font-size: 8px;
+        background: #10bbca;
+        border-radius: 12px;
+        width: 350px;
+      }
+
+      p{
+        padding: 6px;
+        width: 180px;
+      }
+
+      .action{
+        display: block;
+        margin: 20px auto 100px 30px;
+        width: 180px;
+        border-radius: 3px;
+        align-content: center;
+      }
+
+      .action:link, a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 6px 25px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .action:hover, a:active {
+        background-color: red;
+      }
+
+    </style>
   </head>
   <body>
 
-    <p id="p1"></p>
-    <p id="p2"></p>
-    <p id="p3"></p>
-    <p id="p4"></p>
-    <p id="p5"></p>
-    <p id="p6"></p>
-    <p id="p7"></p>
-    <p id="p8"></p>
+    <div id="d1">
+      <p id="p1"></p>
+      <p id="p2"></p>
+      <p id="p3"></p>
+      <p id="p4"></p>
+      <p id="p5"></p>
+      <p id="p6"></p>
+    </div>
 
+    <br>
+
+    <div id="d2">
+      <pre>
+// NaN, (del inglés, “Not a Number”) el lenguaje JavaScript
+
+  var num1 = 0;
+  var num2 = 0;
+  document.getElementById('p1').innerHTML = (num1 / num2);
+
+  // isNaN(), protege nuestro código de valores no numéricos.
+
+  num1 = 0;
+  num2 = 0;
+  if (isNaN(num1 / num2)) {
+    document.getElementById('p2').innerHTML = "Es NaN : " + isNaN(num1 / num2);
+  } else {
+    document.getElementById('p2').innerHTML = "Es NaN : " + isNaN(num1 / num2);
+  }
+
+  // Infinity, es el valor de infinito cuando las operaciones dan dicho resultado.
+  num1 = 10;
+  num2 = 0;
+  document.getElementById('p3').innerHTML = "Es infinity : " + (num1 / num2);
+
+  //toFixed(digitos), 
+    fija el número de decimales que tiene que resolver una 
+    operación y redondea si es necesario.
+
+  var num11 = 4564.345670;
+  var nf = num11.toFixed(2);
+  console.log(nf);
+  document.getElementById('p4').innerHTML = " ".concat(nf);
+
+  var num22 = 4564.345670;
+  var nf2 = num22.toFixed(6);
+  console.log(nf2);
+  document.getElementById('p5').innerHTML = " ".concat(nf2);
+
+  var num33 = 4564.345670;
+  var nf3 = num22.toFixed();
+  console.log(nf3);
+  document.getElementById('p6').innerHTML = " ".concat(nf3);
+
+  var numero = 4564.34567;
+  console.log(numero.toFixed(2));
+      </pre>
+    </div>
+
+    <a class="action" href="../../paginaEjemplos.html">Volver al menu principal</a>
     <footer style="
             position: fixed;
             padding-top: 10px;
@@ -44,10 +138,12 @@
           licencia de Creative Commons Reconocimiento 4.0 Internacional
         </a>
         <p style="
-           margin-top: 5px;
+           background: #bdc3c7;
+           margin: 5px auto;
            font-size: 20px;
-           font-family: 'Lobster', cursive;
-           ">Powered by RVS</p>
+           font-family: 'Lobster', cursive;">
+          Powered by RVS
+        </p>
       </aside>
     </footer>
     <script src="../sources/js/M33FuncionesUtilesParaNumeros.js"></script>
