@@ -175,7 +175,7 @@ only screen and (                min-resolution: 2dppx) {
   .navbar-brand {
     background-image: url("../ico/60x60bb.jpg") !important; 
     background-repeat: no-repeat !important; 
-    background-size: 136px 39px !important;
+    background-size: auto !important;
   }
 
 }

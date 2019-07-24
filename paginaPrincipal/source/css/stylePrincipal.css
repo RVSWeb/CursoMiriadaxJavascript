@@ -226,7 +226,7 @@ img {
 
 /* marco que tiene el icono en la barra del menu 'nav' */
 .navbar-brand{
-  width: 136px;
+  width: 60px;
   background: url("../ico/60x60bb.jpg") left center no-repeat;
   border: 0;
   text-indent: -99999px;
