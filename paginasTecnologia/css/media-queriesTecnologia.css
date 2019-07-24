@@ -173,9 +173,9 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   /* logo */
   .navbar-brand {
-    background-image: url("../..//assets/img/backgrounds/logo354x250.jpg") !important; 
+    background-image: url("../ico/60x60bb.jpg") !important; 
     background-repeat: no-repeat !important; 
-    background-size: 136px 39px !important;
+    background-size: auto !important;
   }
 
 }

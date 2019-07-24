@@ -191,11 +191,17 @@ main#principal{
 
 /* marco que tiene el icono en la barra del menu 'nav' */
 .navbar-brand{
+  /*width: 60px;*/
+  /*margin-right: 0px;*/
+  /*background: url("../ico/60x60bb.jpg") left center no-repeat;*/
+  /*text-indent: -99999px;*/
+  /*--------*/
   width: 60px;
   margin-right: 0px;
   background: url("../ico/60x60bb.jpg") left center no-repeat;
   text-indent: -99999px;
 }
+
 /****** End Top menu ******/
 
 /***** Top content *****/
