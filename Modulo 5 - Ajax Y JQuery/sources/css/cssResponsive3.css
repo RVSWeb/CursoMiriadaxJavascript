@@ -1,0 +1,106 @@
+/* 
+    Created on : 24-jul-2019, 22:21:58
+    Author     : RVS
+*/
+
+/* Para 800px */  
+@media only screen and (min-width: 820px) {  
+
+}  
+
+/* Para 800px */  
+@media only screen and (max-width: 820px) and (min-width: 621px) {  
+  pre{
+    font-size: 16px !important;
+    width: 600px !important;
+  }  
+
+  .action{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 180px;
+    border-radius: 3px;
+    align-content: center;
+  }
+
+  .action:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 6px 25px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .action:hover, a:active {
+    background-color: red;
+  }
+}  
+
+/* Para 600px */  
+@media only screen and (max-width: 620px) and (min-width: 501px) {  
+  pre{
+    font-size: 14px !important;
+    width: 500px !important;
+  }  
+
+  .action{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 180px;
+    border-radius: 3px;
+    align-content: center;
+  }
+
+  .action:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 6px 25px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .action:hover, a:active {
+    background-color: red;
+  }
+}
+
+/* Para 480px */  
+@media only screen and (min-width: 330px) and (max-width: 500px) { 
+
+  h2{
+    margin: 10px !important;
+  }
+
+  
+  div#myDiv > div#myDiv2{
+    margin: 10px !important;
+    font-size: 12px !important;
+    width: 320px !important;
+  }
+
+  .action{
+    display: block;
+    margin: 20px auto;
+    width: 180px;
+    border-radius: 3px;
+    align-content: center;
+  }
+
+  .action:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 6px 25px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .action:hover, a:active {
+    background-color: red;
+  }
+}  
+
+@media only screen and (max-width: 329px) {
+
+}

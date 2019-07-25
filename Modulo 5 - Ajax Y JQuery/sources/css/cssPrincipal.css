@@ -3,28 +3,32 @@ body{
   background-color: #126bbf;
 }
 
-p {
-  font-family: 'Raleway',sans-serif; 
-  font-size: 18px; 
-  font-weight: 500; 
-  line-height: 32px; margin: 0 0 24px; 
+section{
+  width: 330px;
+  margin: 10px auto;
+  text-align: center;
+  background: #7dd9e5;
 }
 
-ul , li {
-  display: block;
-  width: 180px;
-  margin: 0 auto;
-  align-content: center;
+section > div{
+  padding: 5px;
 }
 
-li:hover, a:active  {
-  background-color: #99ff99;
+h2{
+  margin: 10px auto;
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #ffffff;
+}  
+
+img#i1 , h2{
+  border-radius: 7px;
 }
 
 .action{
   display: block;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin: 10px auto !important;
   width: 180px;
   border-radius: 3px;
   align-content: center;
