@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+  background-color: #126bbf;
+  font-family: 'Roboto', sans-serif;
+}
+
+div{
+  width: 450px;
+  margin: 10px auto;
+  background: #f44336;
+}
+
+label{
+  display: block;
+  width: 150px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  background: #99ff99;
+}
+
+input#boton1{
+  width: 100px;
+  padding: 5px;
+  margin: 10px;
+  background: #99ff99;
+}
+
+.redondeado{
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  font-family: Roboto,cursive, serif;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #ff9999;
+}
+
+pre{
+  display: block;
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 10.6px;
+  background: #99ff99;
+}
+
+.action{
+  display: block;
+  width: 180px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  align-content: center;
+  border: 1px solid white;
+}
+
+.action:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.action:hover, a:active {
+  background-color: red;
+}

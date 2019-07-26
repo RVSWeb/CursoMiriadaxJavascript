@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="shortcut icon" href="https://goo.gl/cais23">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link href="../sources/css/cssPrincipal.css" type="text/css" rel="stylesheet">
     <style></style>
   </head>
   <body>
@@ -30,6 +31,9 @@
       Modelo: <input type="text" ng-model="coche.modelo"><br />
       El Coche es : {{nombreCompletoDelCoche}}
     </div>
+
+    <a class="action" href="../../../index.html">Volver al menu principal</a>   
+    <br><br><br><br><br>
 
     <footer style="
             position: fixed;
@@ -67,7 +71,7 @@
             marca: "Audi",
             modelo: "A3"
           };
-          
+
           $scope.nombreCompletoDelCoche = function () {
             var x;
             x = $scope.coche;

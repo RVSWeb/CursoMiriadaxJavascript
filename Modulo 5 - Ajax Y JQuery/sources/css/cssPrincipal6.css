@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+  background-color: #126bbf;
+  font-family: 'Roboto', sans-serif;
+}
+
+div#division1{
+  background-color: #10bbca;
+  width: 375px;
+}
+
+#caja{
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  background: #ffffff;
+}
+
+section{
+  display: inline-table;
+  margin: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #ffff99;
+}
+
+section > h2{
+  display: block;
+  width: 220px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  background: #f44336;
+}
+
+#sec1{
+  width: 250px;
+}
+
+#sec2{
+  width: 250px;
+}
+
+#sec3{
+  width: 250px;
+}
+
+li:hover{
+  background: #99ff99;
+  width: 90%;
+}
+
+input{
+  display: inline-block;
+  width: 80px;
+  margin: 10px;
+  padding: 5px;
+  background: #ffcccc;
+}
+
+input#boton1:hover{
+  background: #f44336;
+}
+
+label{
+  display: block;
+  width: 240px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  background: #9999ff;
+
+}
+
+#boton1{
+  display: inline-block;
+  padding: 8.0px;
+  margin: 10px;
+  text-align: center;
+  background: #99ff99;
+  border: 1px solid #99ff99;
+}
+
+#boton2{
+  display: inline-block;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid #99ff99;
+  background-color: #ff9999;
+}
+
+#boton2:hover{
+  background-color: #f44336;
+}
+
+pre{
+  margin: 10px;
+  padding: 5px;
+  font-size: 8.3px;
+  color: red;
+  background: #ffffff;
+  border-radius: 6px;
+  width: 350px;
+}
+
+.action{
+  display: block;
+  width: 180px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  align-content: center;
+}
+
+.action:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.action:hover, a:active {
+  background-color: red;
+}

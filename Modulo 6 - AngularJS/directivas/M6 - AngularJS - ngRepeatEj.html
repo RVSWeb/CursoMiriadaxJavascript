@@ -15,12 +15,16 @@
     <link rel="shortcut icon" href="https://goo.gl/cais23">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link href="../sources/css/cssPrincipal.css" type="text/css" rel="stylesheet">
     <style></style>
   </head>
 
   <body ng-app="myApp" ng-controller="myCtrl">
 
     <h1 ng-repeat="x in records">{{x}}</h1>
+
+    <a class="action" href="../../../index.html">Volver al menu principal</a>   
+    <br><br><br><br><br>
 
     <script>
           var app = angular.module("myApp", []);

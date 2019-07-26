@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>titulo</title>
+    <title>M62.0 - Varios Selectores a la vez</title>
     <meta charset="UTF-8">
     <meta name="author" content="Raul Vela Salas">
     <meta name="description" content="...">
@@ -13,63 +13,77 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="shortcut icon" href="https://goo.gl/cais23">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-    <link href="../../sources/css/cssPrincipal3.css" type="text/css" rel="stylesheet">
+    <link href="../../sources/css/cssPrincipal7.css" type="text/css" rel="stylesheet">
     <style>
-
-      label[for="boton1"]{
-        display: block;
-        text-align: center;
-        padding: 5px;
-        display: block;
-        margin: 10px 0 0 50px;
-        width: 100px;
-        border-radius: 6px;
-        background: #99ff99;
-      }
-
-      input#boton1{
-        display: block;
-        width: 80px;
-        display: inline-block;
-        padding: 5px;
-        margin: 10px 0 0 50px;
-        border-radius: 6px;
-        background: #99ff99;
-      }
-
-      div.redondeado{
-        display: block;
-        background-color: #ff9999;
-        padding: 20px;
-        height: 100px;
-        margin: 10px 0 0 50px;
-        font-weight: bold;
-        font-family: Roboto,cursive, serif;
-        text-align: center;
-        width: 100px;
-        border-radius: 10px;
-      }
-
     </style>
   </head>
   <body>
 
-    <label for="boton1">Boton</label>
-    <input id="boton1" type="button"  value="Boton">
+    <div>
 
-    <p id="uno"></p>
-    <div></div>
-    <div class="redondeado">Pulsa el div para ejecutar el Evento</div> 
+      <label>Boton</label>
+      <input id="boton1" type="button" value="Boton">
+
+      <p id="uno"></p>
+
+      <div></div>
+
+      <div class="redondeado">Pulsa el div para ejecutar el Evento</div> 
+
+      <pre>
+  var x;
+    x = $(document);
+    x.ready(iniciarEventos);
+
+  /**
+  * Lanza evento onClick sobre el selector id #boton1 
+  * 
+  * @returns {undefined}
+  */
+  function iniciarEventos() {
+  var x;
+    x = $("#boton1");
+    x.click(presionB1); // Al evento le indicamos que acción realizar
+  }
+
+  /**
+  * Cambia el color de un elemento con el id 'boton1'
+  * 
+  * @returns {undefined}
+  */
+  function presionB1() {
+    document.getElementById('boton1').style.background = "#429bf4";
+  }
+
+  // Etiqueta y selector
+  var a = $("div.redondeado").click(function () {
+    alert("Handler for .click() called.");
+  });
+
+  // Etiquetas y varios selectores
+    var aa = $("#uno, div , div.redondeado");
+      </pre>
+
+      <a class="action" href="../../../index.html">Volver al menu principal</a>
+
+      <br>
+      <br>
+      <br>
+
+    </div>
 
     <footer style="
             position: fixed;
+            bottom: 0px;
+            width: 100%;
+            margin-top: 130px;
             padding-top: 10px;
             padding-bottom: 10px;
-            bottom: 0;
-            width: 100%;
+            text-align: center;
             background-color: rgb(189, 195, 199);
             color: #000;
-            text-align: center;">
+            ">
+
       <aside style="height: 55px;">
         <img alt="Licencia de Creative Commons" src="https://licensebuttons.net/l/by/4.0/80x15.png" />
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">

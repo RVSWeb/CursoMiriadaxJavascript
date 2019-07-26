@@ -10,13 +10,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://goo.gl/cais23">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-    <link href="../../sources/css/cssPrincipal3.css" type="text/css" rel="stylesheet">
     <style>
 
-      input#boton1{
+      body{
+        background:  #10bbca;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      #sec1{
+      }
+
+      #boton1{
         background: #99ff99;
         border-radius: 12px;
         display: block;
@@ -27,7 +34,7 @@
         width: 100px;
       }
 
-      div.redondeado{
+      .redondeado{
         background-color: #ff9999;
         width: 100px;
         height: 100px;
@@ -40,57 +47,96 @@
         font-family: Roboto, Verdana, sans-serif;
         padding: 12px;
         margin: 20px;
+        margin-left: 10px;
         border-radius: 12px;
         background-color: #ffff99;
       }
 
-      div#div1 , div.div2{
+      div {
+        margin: 10px auto !important;
+      }
+
+      #div1 , .div2{
         padding: 10px;
         border-radius: 12px;
-        margin: 10px;
+        margin-left: 10px;
         background-color: #ffcc99;
         width: 200px;
       }
 
-      div.div3{
+      .div3{
         background-color: #ffcc99;
         border-radius: 12px;
         padding: 1px;
-        margin: 10px;
+        margin-left: 10px;
         text-align: center;
         width: 200px;
       }
+
+      .action{
+        display: block;
+        margin: 10px !important;
+        width: 180px;
+        border-radius: 3px;
+        align-content: center;
+      }
+
+      .action:link, a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 6px 25px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .action:hover, a:active {
+        background-color: red;
+      }
+
 
     </style>
   </head>
   <body>
 
-    <section id="sec1">
-      <h2>Funciones principales JQuery con Ajax</h2>
-    </section>
+    <div>
+      <section id="sec1">
+        <h1>Funciones principales</h1>
+        <h2>JQuery con Ajax</h2>
+      </section>
 
-    <div id="div1">
+      <div class="div3">
+        <p>Agregar Contenido</p>
+      </div>
+
+      <div id="div1">
+      </div>
+
+      <div class="div2">
+      </div>
+
+      <p id="p1"></p>
+
+      <p id="p2"></p>
+
+      <input type="button" id="boton1" value="Pulsar">
+
+      <a class="action" href="../../../index.html">Volver al menu principal</a>   
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
     </div>
-
-    <div class="div2">
-    </div>
-
-    <div class="div3">
-      <p>Agregar Contenido</p>
-    </div>
-
-    <p id="p1"></p>
-
-    <p id="p2"></p>
-
-    <input type="button" id="boton1" value="Pulsar">
 
     <footer style="
             position: fixed;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            bottom: 0;
             width: 100%;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            bottom: 0px;
             background-color: rgb(189, 195, 199);
             color: #000;
             text-align: center;">
