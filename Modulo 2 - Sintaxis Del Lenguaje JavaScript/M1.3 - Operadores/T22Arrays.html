@@ -5,32 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../sources/css/cssPrincipal.css" type="text/css" rel="stylesheet">
+    <style>
 
-    <script>
+      @media (min-width: 340px) and (max-width: 600px) {
 
-      var dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
-      var v = 0;
-      for (var i = 0; i < dias.length; i++) {
-        console.log(dias[i]);
-        document.write(++v + " - " + dias[i] + "<br>");
+        pre#c3{
+          width: 320px !important;
+          margin: 5px;
+          font-size: 10px;
+          background: #9999ff;
+        }
       }
 
-    </script>
+
+    </style>
   </head>
   <body>
 
     <pre id="c3">
-      var dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
-      var v = 0;
-      for (var i = 0; i &lt; dias.length; i++) {
-        console.log(dias[i]);
-        document.write(++v + " - " + dias[i] + " &lt;br&gt; ");
-      }
-
+var dias = ["Lunes", "Martes", "Miercoles", 
+            "Jueves", "Viernes", "Sabado", "Domingo"];
+var v = 0;
+  for (var i = 0; i &lt; dias.length; i++) {
+    console.log(dias[i]);
+    document.write(++v + " - " + dias[i] + " &lt;br&gt; ");
+  }
     </pre>
 
     <div>
       <a class="action" href="../../paginaEjemplos.html">Volver al menu principal</a>    
     </div>
+
+    <script>
+      var dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+      var v = 0;
+      for (var i = 0; i < dias.length; i++) {
+        console.log(dias[i]);
+        document.write(++v + " - " + dias[i] + " <br> ");
+      }
+    </script>
   </body>
 </html>

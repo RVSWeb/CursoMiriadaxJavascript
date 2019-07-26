@@ -3,6 +3,14 @@ body{
   background: #00b5cc;
 }
 
+pre{
+  background: #ffffff;
+  padding: 10px;
+  width: 350px;
+  text-align: left;
+}
+
+
 p {
   font-family: 'Raleway',sans-serif; 
   font-size: 18px; 
