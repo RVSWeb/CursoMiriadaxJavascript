@@ -7,6 +7,7 @@ html {
 body {
   width: 800px;
   margin: 0 auto;
+  background-color: #126bbf;
 }
 
 h1, h2 {
@@ -20,13 +21,56 @@ h1 {
   text-align: center;
 }
 
-header p {
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+  margin-bottom: 10px;
+  text-align: center;
+  background: #00b5cc;
+}
+
+header{
+  background: #00b5cc;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+header > p{
+  margin: 10px auto; 
+  padding: 10px;
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
+  width: 70%;
+  border-radius: 12px;
+  background: #cee0e6;
+}
+
+header > h1{
+  margin-top: 0px;
+  border: 1px solid white;
+  border-radius: 12px;
+  background: #00b5cc;
 }
 
 /* section styles */
+
+
+section{
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+section > h6{
+  background: #9999ff;
+  height: 10px;
+}
+
+section > article{
+  background: #00b5cc;
+  border-radius: 12px;
+}
 
 section article {
   width: 33%;
@@ -41,8 +85,87 @@ section ul {
   margin-top: 0;
 }
 
-h2 {
-  font-size: 2.5rem;
-  letter-spacing: -5px;
-  margin-bottom: 10px;
+section > h2#cabecera{
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+section{
+  margin: 40px;
+}
+
+article{
+  background: #00b5cc;
+  margin-bottom: 25px;
+  width: 300px !important;
+}
+
+article > p{
+  margin: 5px;
+  padding-left: 5px;
+  background: #cee0e6;
+}
+
+article > ul{
+  margin: 10px;
+}
+
+ul{
+  padding-left: 0px;
+  margin-left: 10px;
+}
+
+ul > li{
+  list-style-type: none;
+  background: #99ffff;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+section{
+  width: 330px;
+  margin: 10px auto;
+  text-align: center;
+  background: #7dd9e5;
+}
+
+section > div{
+  padding: 5px;
+}
+
+h2{
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #ffffff;
+}  
+
+img#i1 , h2{
+  border-radius: 7px;
+}
+
+.action{
+  display: block;
+  width: 180px;
+  align-content: center;
+  margin: 10px auto !important;
+  margin-bottom: 20px !important;
+  border-radius: 3px;
+}
+
+.action:link, a:visited {
+  padding: 6px 25px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f44336;
+}
+
+.action:hover, a:active {
+  background-color: red;
 }

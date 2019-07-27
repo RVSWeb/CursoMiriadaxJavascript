@@ -21,7 +21,9 @@
 }  
 
 /* Para 800px */  
-@media only screen and (max-width: 820px) and (min-width: 621px) {  
+@media only screen and (max-width: 820px) and (min-width: 621px) {
+
+
   a{
     margin-left: 300px;
     padding: 10px;
@@ -108,7 +110,8 @@
   }   
 
   header{
-    margin: 30px auto;
+    width: 320px;
+    margin: 30px auto !important;
     padding: 10px;
   }
 
@@ -162,7 +165,7 @@
     text-decoration: none;
   }
 
-   a#action:hover{
+  a#action:hover{
     background: red;
   }
 
