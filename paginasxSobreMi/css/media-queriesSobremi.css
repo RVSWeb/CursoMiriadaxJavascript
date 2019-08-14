@@ -1,3 +1,7 @@
+*{
+  font-family: 'Roboto',sans-serif;
+}
+
 @media only screen and (min-width: 1199px) {
 
   h1, h2 { 
@@ -9,7 +13,6 @@
     padding: 10px;
     text-align: center;
   }
-
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -21,6 +24,10 @@
   h2#titulo2{
     margin: 0px auto;
     padding: 10px;
+    text-align: center;
+  }
+
+  .nav-item{
     text-align: center;
   }
 
@@ -55,6 +62,10 @@
   .nav-link { 
     padding-left: 0.6rem; 
     padding-right: 0.6rem; 
+  }
+
+  .nav-item{
+    text-align: center;
   }
 
   .top-content { 
@@ -103,7 +114,6 @@
   .blog-box h3:hover i { 
     padding-left: 10px; 
   }
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -124,7 +134,6 @@
     padding-right: 30px !important;
   }
 
-
   .navbar.navbar-no-bg { background: #444 !important;  }
   .navbar-dark .navbar-toggler { border-color: #444; }
   .navbar-dark .navbar-toggler:focus { 
@@ -135,6 +144,10 @@
   .navbar-expand-md .navbar-nav .nav-link { 
     padding-top: 0.3rem; 
     padding-bottom: 0.3rem; 
+  }
+
+  .nav-item{
+    text-align: center;
   }
 
   .top-content { padding: 140px 0; }
@@ -212,6 +225,7 @@
 }
 
 @media only screen and (max-width: 415px) {
+  
   h1, h2 { 
     font-size: 32px; 
   }
@@ -228,6 +242,9 @@
     padding-right: 30px !important;
   }
 
+  .nav-item{
+    text-align: center;
+  }
 }
 
 /* plugin Retina-ize images/icons para los dispositivos IOS mejora la vision de los pixeles */
