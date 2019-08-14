@@ -1,5 +1,29 @@
+@media only screen and (min-width: 1199px) {
 
-@media (min-width: 992px) and (max-width: 1199px) {
+  h1, h2 { 
+    font-size: 32px; 
+  }
+
+  h2#titulo2{
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+  h1, h2 { 
+    font-size: 32px; 
+  }
+
+  h2#titulo2{
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+  }
+
   .services-box 
   .services-box-icon { 
     width: 60px; 
@@ -14,7 +38,18 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  h1, h2 { 
+    font-size: 32px; 
+  }
+
+  h2#titulo2{
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+  }
+
   .navbar-expand-md 
   .navbar-nav 
   .nav-link { 
@@ -71,7 +106,24 @@
 
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+
+  h1, h2 { 
+    font-size: 32px; 
+  }
+
+  h2#titulo2{
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  p.parrafo{
+    text-align: center;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
 
   .navbar.navbar-no-bg { background: #444 !important;  }
   .navbar-dark .navbar-toggler { border-color: #444; }
@@ -159,8 +211,23 @@
   .footer-bottom { padding-top: 20px; }
 }
 
-@media (max-width: 415px) {
-  h1, h2 { font-size: 32px; }
+@media only screen and (max-width: 415px) {
+  h1, h2 { 
+    font-size: 32px; 
+  }
+
+  h2#titulo2{
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  p.parrafo{
+    text-align: center;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
 }
 
 /* plugin Retina-ize images/icons para los dispositivos IOS mejora la vision de los pixeles */
